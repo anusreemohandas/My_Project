@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-17T19:30:07 IST" name="Suite" finished-at="2024-02-17T19:30:48 IST" duration-ms="41363">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyThatTheUserCanLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTest@3a5ecce3]" name="verifyThatTheUserCanLoginWithValidCredentials" class="testscripts.LoginTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2024-02-17T19:30:07 IST" name="Test" finished-at="2024-02-17T19:30:48 IST" duration-ms="41363">
+      <class name="testscripts.ManageOfferCodeTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.ManageOfferCodeTest@4fad9bb2]" started-at="2024-02-17T19:30:35 IST" name="initializeBrowser" finished-at="2024-02-17T19:30:41 IST" duration-ms="6222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyWhetherTheUserIsAbleToAddANewOfferCodeInTheManageOfferCodePage()[pri:0, instance:testscripts.ManageOfferCodeTest@4fad9bb2]" started-at="2024-02-17T19:30:41 IST" name="verifyWhetherTheUserIsAbleToAddANewOfferCodeInTheManageOfferCodePage" description="Verify whether the user is able to add a new offer code in the manage offer code page" finished-at="2024-02-17T19:30:48 IST" duration-ms="6215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherTheUserIsAbleToAddANewOfferCodeInTheManageOfferCodePage -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.ManageOfferCodeTest@4fad9bb2]" started-at="2024-02-17T19:30:48 IST" name="driverQuit" finished-at="2024-02-17T19:30:48 IST" duration-ms="699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhetherTheUserIsAbleToAddANewOfferCodeInTheManageOfferCodePage status=SUCCESS method=ManageOfferCodeTest.verifyWhetherTheUserIsAbleToAddANewOfferCodeInTheManageOfferCodePage()[pri:0, instance:testscripts.ManageOfferCodeTest@4fad9bb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscripts.ManageOfferCodeTest -->
+      <class name="testscripts.LoginTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@3a5ecce3]" started-at="2024-02-17T19:30:07 IST" name="initializeBrowser" finished-at="2024-02-17T19:30:28 IST" duration-ms="21112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyThatTheUserCanLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTest@3a5ecce3]" started-at="2024-02-17T19:30:28 IST" name="verifyThatTheUserCanLoginWithValidCredentials" description="Verify whether the user is able to login with valid credendtials" finished-at="2024-02-17T19:30:34 IST" duration-ms="6307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatTheUserCanLoginWithValidCredentials -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@3a5ecce3]" started-at="2024-02-17T19:30:34 IST" name="driverQuit" finished-at="2024-02-17T19:30:35 IST" duration-ms="664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyThatTheUserCanLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyThatTheUserCanLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTest@3a5ecce3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscripts.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

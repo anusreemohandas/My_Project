@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Parallel Method Testing]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="generate_report.Listeners"/>
+  </listeners>
+  <test thread-count="2" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="testscripts.LoginTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="verifyThatTheUserCanLoginWithValidCredentials"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscripts.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Parallel Method Testing] -->
