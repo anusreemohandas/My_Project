@@ -20,7 +20,12 @@
 				
 			</methods>
 	  </class>
-
+	<class name="testscripts.AdminUsersTest">
+			<methods>
+				<include name="verifyWhetherTheUserIsAbleToAddANewUserInTheAdminUsersPage"></include>
+				
+			</methods>
+	  </class>
 	 
     </classes>
   </test> <!-- Test -->

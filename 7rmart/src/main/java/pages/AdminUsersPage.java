@@ -17,12 +17,12 @@ public class AdminUsersPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//a[@onclick='click_button(1)']") WebElement newButton;
-	@FindBy(xpath = "//input[@id='username']") WebElement usernameField;
-	@FindBy(xpath = "//input[@id='password']") WebElement passwordField;
-	@FindBy(xpath = "//select[@id='user_type']") WebElement usertypeField;
-	@FindBy(xpath = "//button[@name='Create']") WebElement saveButton;
-	@FindBy(xpath = "//div[contains(@class,'alert-success')]") WebElement alertElement;
+	@FindBy(xpath = "//a[@onclick='click_button(1)']") private WebElement newButton;
+	@FindBy(xpath = "//input[@id='username']") private WebElement usernameField;
+	@FindBy(xpath = "//input[@id='password']") private WebElement passwordField;
+	@FindBy(xpath = "//select[@id='user_type']") private WebElement usertypeField;
+	@FindBy(xpath = "//button[@name='Create']") private WebElement saveButton;
+	@FindBy(xpath = "//div[contains(@class,'alert-success')]") private WebElement alertElement;
 	
 	public void clickOnNewButton() {
 		newButton.click();

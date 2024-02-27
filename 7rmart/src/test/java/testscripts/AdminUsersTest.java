@@ -7,16 +7,19 @@ import org.testng.annotations.Test;
 import pages.AdminUsersPage;
 import pages.LoginPage;
 import pages.MenuPage;
+import retry.Retry;
 import utilities.ExcelUtility;
+import utilities.RandomUtility;
 
 public class AdminUsersTest extends Base {
 	
-	@Test(description = "Verify whether a new user can be added to the admin users page", groups = {"smoke"})
+	@Test(retryAnalyzer = Retry.class, description = "Verify whether a new user can be added to the admin users page")
 	public void verifyWhetherTheUserIsAbleToAddANewUserInTheAdminUsersPage() {
+		RandomUtility randomUtility = new RandomUtility();
 		String username = ExcelUtility.getString(1, 0, "LoginPage");
 		String password = ExcelUtility.getString(1, 1, "LoginPage");
 		String menuToBeSelected = ExcelUtility.getString(2, 0, "MenuPage");
-		String newUsername = ExcelUtility.getString(0, 1, "AdminUsersPage");
+		String newUsername = randomUtility.generateFullName();
 		String newPassword = ExcelUtility.getString(1, 1, "AdminUsersPage");
 		String newUsertype = ExcelUtility.getString(2, 1, "AdminUsersPage");
 		String expectedAlertMessage = ExcelUtility.getString(3, 1, "AdminUsersPage");
